@@ -1,0 +1,17 @@
+<div>{{ count$ | async }}</div>
+<h2>Father</h2>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="multiply(2)">Multiply</button>
+<button (click)="divide(2)">Divide</button>
+
+<hr>
+<h2>Child</h2>
+<app-hijo></app-hijo>
+
+<hr>
+<h2>Grand Child</h2>
+<app-nieto></app-nieto>
+
+<hr>
+<button (click)="reset()">Reset</button>
